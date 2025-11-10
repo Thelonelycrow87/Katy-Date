@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Go on a date with me?</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="floaters" aria-hidden="true"></div>
+
+  <main class="center" id="card" aria-live="polite">
+    <div class="sticker flower">🌸</div>
+    <div class="sticker bear">🐻‍❄️</div>
+
+    <h1 id="title" class="typewriter">Go on a date with me? 🥹<span class="caret"></span></h1>
+    <p class="lede" id="lede">I promise great coffee, bad jokes, and an even better time. What do you say?</p>
+
+    <div class="buttons" id="btnRow">
+      <button class="btn btn-yes heartbeat" id="yesBtn" aria-label="Yes">Yes! 💖</button>
+      <button class="btn btn-no" id="noBtn" aria-label="No">No 🙈</button>
+    </div>
+    
+    <div class="hint">(the “No” button is shy and moves across the screen ✨)</div>
+
+    <div class="sparkles" id="sparkles" aria-hidden="true"></div>
+    <div class="quips" id="quips" aria-hidden="true"></div>
+  </main>
+
+  <section class="overlay" id="overlay" role="dialog" aria-modal="true" aria-labelledby="yay">
+    <div class="doodle-wrap">
+      <h2 class="yay" id="yay">Yaaay! 🎉</h2>
+      <p class="sub">You just made my day. I’ll text you time & place — can’t wait! ✨</p>
+      <svg class="pals bob" viewBox="0 0 520 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Two cute hearts holding hands">
+        <defs>
+          <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#ff8fab"/>
+            <stop offset="100%" stop-color="#ff4d6d"/>
+          </linearGradient>
+          <linearGradient id="g2" x1="1" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#ffd6e0"/>
+            <stop offset="100%" stop-color="#ff8fab"/>
+          </linearGradient>
+        </defs>
+        <g transform="translate(160,150)">
+          <path d="M0-30 C-18-60 -70-60 -84-22 C-98 15 -66 52 0 90 C66 52 98 15 84-22 C70-60 18-60 0-30 Z" fill="url(#g1)"/>
+          <circle class="blink" cx="-22" cy="5" r="5" fill="#341931"/>
+          <circle class="blink" cx="22" cy="5" r="5" fill="#341931"/>
+          <path d="M-8 26 q8 8 16 0" stroke="#341931" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <circle cx="-34" cy="20" r="3" fill="#ff8fab"/>
+          <circle cx="34" cy="20" r="3" fill="#ff8fab"/>
+        </g>
+        <g transform="translate(360,150)">
+          <path d="M0-30 C-18-60 -70-60 -84-22 C-98 15 -66 52 0 90 C66 52 98 15 84-22 C70-60 18-60 0-30 Z" fill="url(#g2)"/>
+          <circle class="blink" cx="-22" cy="5" r="5" fill="#341931"/>
+          <circle class="blink" cx="22" cy="5" r="5" fill="#341931"/>
+          <path d="M-8 26 q8 8 16 0" stroke="#341931" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <circle cx="-34" cy="20" r="3" fill="#ff8fab"/>
+          <circle cx="34" cy="20" r="3" fill="#ff8fab"/>
+        </g>
+        <path d="M206 196 q54 14 108 0" stroke="#341931" stroke-width="6" fill="none" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div class="confetti" id="confetti"></div>
+  </section>
+
+  <div class="credit">Press <strong>R</strong> to reset • Made with ♥</div>
+
+  <audio id="hoverSound" src="./nope.mp3" preload="auto"></audio>
+  <audio id="yesSound" src="./yes.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
