@@ -218,7 +218,7 @@ window.addEventListener('keydown',(e)=>{
     no.style.left=''; no.style.top='';
     dodging=false; cooldown=false;
     title.textContent='Katy, Go on a Date with me?';
-    if(lede) lede.textContent='I'll pick you up, Art Gallery, Snack inbetween, and Dinner. What do you say?';
+    if(lede) lede.textContent='I will pick you up, Art Gallery, Snack inbetween, and Dinner. What do you say?';
     sparkles.innerHTML='';
     quips.innerHTML='';
   }
