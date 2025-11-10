@@ -40,7 +40,7 @@ requestAnimationFrame(()=>btnRow.classList.add('ready'));
 (function typeTitle(){
   const t = document.getElementById('title');
   const caret = t.querySelector('.caret');
-  const full = 'Go on a date with me? 🥹';
+  const full = 'Katy, Go on a Date with me?';
   let i = 0; t.firstChild && t.removeChild(t.firstChild);
   const span = document.createElement('span'); t.insertBefore(span, caret);
   const tick = ()=>{
