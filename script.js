@@ -217,7 +217,7 @@ window.addEventListener('keydown',(e)=>{
     no.style.position='relative';
     no.style.left=''; no.style.top='';
     dodging=false; cooldown=false;
-    title.textContent='Go on a date with me? 🥹';
+    title.textContent='Katy, Go on a Date with me?';
     if(lede) lede.textContent='I promise great coffee, bad jokes, and an even better time. What do you say?';
     sparkles.innerHTML='';
     quips.innerHTML='';
